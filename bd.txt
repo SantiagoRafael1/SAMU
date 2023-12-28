@@ -1,0 +1,21 @@
+criação de banco de dados:
+
+create database if not exists aula_mvc
+default charset utf8mb4
+default collate utf8mb4_general_ci;
+
+=======================
+
+criação de tabela:
+
+create table if not exists tb_pessoa(
+	id int auto_increment not null primary key,
+    nome varchar(100) not null,
+    email varchar(100) not null unique
+);
+
+=======================
+
+ver a estrutura da tabela:
+
+desc tb_pessoa;
